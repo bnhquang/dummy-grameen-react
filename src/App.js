@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import BarChart from "./components/BarChart"; // Adjust the path as necessary
-import FilterDropdowns from "./components/FilterDropdowns"; // Assuming FilterDropdowns is in the same directory
+import BarChart from "./components/BarChart";
+import FilterDropdowns from "./components/FilterDropdowns";
+import CirclePackingChart from "./components/CirclePackingChart";
 
 function App() {
     const [cropData, setCropData] = useState(null);
@@ -213,7 +214,7 @@ function App() {
                 cropNameOptions={cropNameOptions}
                 seasonOptions={seasonOptions}
             />
-            {noAnalytics ? (
+            {/* {noAnalytics ? (
                 <p>No analytics available</p>
             ) : analyticsData ? (
                 <BarChart
@@ -225,6 +226,14 @@ function App() {
                     selectedTopLeast={selectedTopLeast}
                     selectedType={selectedType}
                 />
+            ) : (
+                <p>Loading data...</p>
+            )} */}
+
+            {noAnalytics ? (
+                <p>No analytics available</p>
+            ) : analyticsData ? (
+                <CirclePackingChart cropData={analyticsData} />
             ) : (
                 <p>Loading data...</p>
             )}

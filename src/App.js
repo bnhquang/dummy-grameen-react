@@ -5,6 +5,7 @@ import CirclePackingChart from "./components/CirclePackingChart";
 import HTMLInReact from "./components/HTMLInReact";
 import HorizontalBarChart from "./components/HorizontalBarChart";
 import TopProductionStatesHorizontalBarChart from "./components/TopProductionStatesHorizontalBarChart";
+import ScatterPlotWithProductivity from "./components/ScatterPlotWithProductivity";
 
 function App() {
     const [cropData, setCropData] = useState(null);
@@ -197,7 +198,7 @@ function App() {
 
     return (
         <div className="App">
-            {/* <h1>{chartTitle}</h1>
+            <h1>{chartTitle}</h1>
             <FilterDropdowns
                 data={cropData}
                 selectedState={selectedState}
@@ -216,7 +217,7 @@ function App() {
                 districtOptions={districtOptions}
                 cropNameOptions={cropNameOptions}
                 seasonOptions={seasonOptions}
-            /> */}
+            />
             {/* {noAnalytics ? (
                 <p>No analytics available</p>
             ) : analyticsData ? (
@@ -253,7 +254,17 @@ function App() {
                 selectedType={selectedType}
             /> */}
 
-            <TopProductionStatesHorizontalBarChart data={analyticsData} />
+            <ScatterPlotWithProductivity
+                data={analyticsData}
+                selectedState={selectedState}
+                selectedDistrict={selectedDistrict}
+                selectedSeason={selectedSeason}
+                selectedCropName={selectedCropName}
+                selectedTopLeast={selectedTopLeast}
+                selectedType={selectedType}
+            />
+
+            {/* <TopProductionStatesHorizontalBarChart data={analyticsData} /> */}
         </div>
     );
 }

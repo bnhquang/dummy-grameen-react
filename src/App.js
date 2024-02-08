@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import BarChart from "./components/BarChart";
 import FilterDropdowns from "./components/FilterDropdowns";
 import CirclePackingChart from "./components/CirclePackingChart";
+import HTMLInReact from "./components/HTMLInReact";
+import HorizontalBarChart from "./components/HorizontalBarChart";
+import TopProductionStatesHorizontalBarChart from "./components/TopProductionStatesHorizontalBarChart";
 
 function App() {
     const [cropData, setCropData] = useState(null);
@@ -189,12 +192,12 @@ function App() {
         }
 
         fetchData(query);
-        console.log(query);
+        // console.log(query);
     }, [selectedState, selectedDistrict, selectedCropName, selectedSeason]);
 
     return (
         <div className="App">
-            <h1>{chartTitle}</h1>
+            {/* <h1>{chartTitle}</h1>
             <FilterDropdowns
                 data={cropData}
                 selectedState={selectedState}
@@ -213,7 +216,7 @@ function App() {
                 districtOptions={districtOptions}
                 cropNameOptions={cropNameOptions}
                 seasonOptions={seasonOptions}
-            />
+            /> */}
             {/* {noAnalytics ? (
                 <p>No analytics available</p>
             ) : analyticsData ? (
@@ -230,13 +233,27 @@ function App() {
                 <p>Loading data...</p>
             )} */}
 
-            {noAnalytics ? (
+            {/* {noAnalytics ? (
                 <p>No analytics available</p>
             ) : analyticsData ? (
                 <CirclePackingChart cropData={analyticsData} />
             ) : (
                 <p>Loading data...</p>
-            )}
+            )} */}
+
+            {/* <HTMLInReact /> */}
+
+            {/* <HorizontalBarChart
+                data={analyticsData}
+                selectedState={selectedState}
+                selectedDistrict={selectedDistrict}
+                selectedSeason={selectedSeason}
+                selectedCropName={selectedCropName}
+                selectedTopLeast={selectedTopLeast}
+                selectedType={selectedType}
+            /> */}
+
+            <TopProductionStatesHorizontalBarChart data={analyticsData} />
         </div>
     );
 }

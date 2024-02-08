@@ -1,0 +1,156 @@
+[
+    {
+        "state": "Kerala",
+        "production": 5951362694,
+        "area": 1418139,
+        "productivity": 4196.600399537704,
+        "value": 5951362694
+    },
+    {
+        "state": "Andhra Pradesh",
+        "production": 2132282199,
+        "area": 9394114,
+        "productivity": 226.98066033688755,
+        "value": 2132282199
+    },
+    {
+        "state": "Uttar Pradesh",
+        "production": 199418852,
+        "area": 24147478,
+        "productivity": 8.258371826656184,
+        "value": 199418852
+    },
+    {
+        "state": "Maharashtra",
+        "production": 108201557,
+        "area": 20513900,
+        "productivity": 5.2745483306441,
+        "value": 108201557
+    },
+    {
+        "state": "Karnataka",
+        "production": 68614590,
+        "area": 11187060,
+        "productivity": 6.133388933285421,
+        "value": 68614590
+    },
+    {
+        "state": "West Bengal",
+        "production": 43584403,
+        "area": 8058390,
+        "productivity": 5.408574541564755,
+        "value": 43584403
+    },
+    {
+        "state": "Punjab",
+        "production": 35254402,
+        "area": 7303200,
+        "productivity": 4.827254080403111,
+        "value": 35254402
+    },
+    {
+        "state": "Bihar",
+        "production": 32032883,
+        "area": 7150228,
+        "productivity": 4.479980638379644,
+        "value": 32032883
+    },
+    {
+        "state": "Puducherry",
+        "production": 25590342,
+        "area": 23541,
+        "productivity": 1087.0541608257934,
+        "value": 25590342
+    },
+    {
+        "state": "Telangana ",
+        "production": 15806094,
+        "area": 4964539,
+        "productivity": 3.1837989388339984,
+        "value": 15806094
+    },
+    {
+        "state": "Assam",
+        "production": 15327493,
+        "area": 5860445,
+        "productivity": 2.615414529101459,
+        "value": 15327493
+    },
+    {
+        "state": "Uttarakhand",
+        "production": 11873861,
+        "area": 3178958,
+        "productivity": 3.7351424586295257,
+        "value": 11873861
+    },
+    {
+        "state": "Odisha",
+        "production": 11112213,
+        "area": 4829434,
+        "productivity": 2.300934850750626,
+        "value": 11112213
+    },
+    {
+        "state": "Chhattisgarh",
+        "production": 9516579,
+        "area": 5622988,
+        "productivity": 1.6924416342343251,
+        "value": 9516579
+    },
+    {
+        "state": "Nagaland",
+        "production": 1147430,
+        "area": 470090,
+        "productivity": 2.440873024314493,
+        "value": 1147430
+    },
+    {
+        "state": "Meghalaya",
+        "production": 852630,
+        "area": 236379,
+        "productivity": 3.60704631122054,
+        "value": 852630
+    },
+    {
+        "state": "Tripura",
+        "production": 822366,
+        "area": 285642,
+        "productivity": 2.879009389375512,
+        "value": 822366
+    },
+    {
+        "state": "Jammu and Kashmir ",
+        "production": 740906,
+        "area": 612675,
+        "productivity": 1.2092969355694292,
+        "value": 740906
+    },
+    {
+        "state": "Arunachal Pradesh",
+        "production": 481342,
+        "area": 258265,
+        "productivity": 1.8637523473951174,
+        "value": 481342
+    },
+    {
+        "state": "Goa",
+        "production": 383985,
+        "area": 157310,
+        "productivity": 2.440944631619096,
+        "value": 383985
+    },
+    {
+        "state": "Sikkim",
+        "production": 105718,
+        "area": 68935,
+        "productivity": 1.5335896134039313,
+        "value": 105718
+    },
+    {
+        "state": "Dadra and Nagar Haveli",
+        "production": 27941,
+        "area": 15825,
+        "productivity": 1.7656240126382305,
+        "value": 27941
+    }
+]

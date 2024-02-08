@@ -6,6 +6,7 @@ import HTMLInReact from "./components/HTMLInReact";
 import HorizontalBarChart from "./components/HorizontalBarChart";
 import TopProductionStatesHorizontalBarChart from "./components/TopProductionStatesHorizontalBarChart";
 import ScatterPlotWithProductivity from "./components/ScatterPlotWithProductivity";
+import PolarAreaChart from "./components/PolarAreaChart";
 
 function App() {
     const [cropData, setCropData] = useState(null);
@@ -202,21 +203,49 @@ function App() {
             <FilterDropdowns
                 data={cropData}
                 selectedState={selectedState}
-                setSelectedState={setSelectedState}
+                setSelectedState={(selectedOption) => {
+                    setSelectedState(
+                        selectedOption || {
+                            value: "All States",
+                            label: "All States",
+                        }
+                    );
+                }}
+                stateOptions={stateOptions}
                 selectedDistrict={selectedDistrict}
-                setSelectedDistrict={setSelectedDistrict}
+                setSelectedDistrict={(selectedOption) => {
+                    setSelectedDistrict(
+                        selectedOption || {
+                            value: "All Districts",
+                            label: "All Districts",
+                        }
+                    );
+                }}
+                districtOptions={districtOptions}
                 selectedCropName={selectedCropName}
-                setSelectedCropName={setSelectedCropName}
+                setSelectedCropName={(selectedOption) => {
+                    setSelectedCropName(
+                        selectedOption || {
+                            value: "All Crops",
+                            label: "All Crops",
+                        }
+                    );
+                }}
+                cropNameOptions={cropNameOptions}
                 selectedSeason={selectedSeason}
-                setSelectedSeason={setSelectedSeason}
+                setSelectedSeason={(selectedOption) => {
+                    setSelectedSeason(
+                        selectedOption || {
+                            value: "All Seasons",
+                            label: "All Seasons",
+                        }
+                    );
+                }}
+                seasonOptions={seasonOptions}
                 selectedTopLeast={selectedTopLeast}
                 setSelectedTopLeast={setSelectedTopLeast}
                 selectedType={selectedType}
                 setSelectedType={setSelectedType}
-                stateOptions={stateOptions}
-                districtOptions={districtOptions}
-                cropNameOptions={cropNameOptions}
-                seasonOptions={seasonOptions}
             />
             {/* {noAnalytics ? (
                 <p>No analytics available</p>
@@ -254,7 +283,19 @@ function App() {
                 selectedType={selectedType}
             /> */}
 
-            <ScatterPlotWithProductivity
+            {/* <ScatterPlotWithProductivity
+                data={analyticsData}
+                selectedState={selectedState}
+                selectedDistrict={selectedDistrict}
+                selectedSeason={selectedSeason}
+                selectedCropName={selectedCropName}
+                selectedTopLeast={selectedTopLeast}
+                selectedType={selectedType}
+            /> */}
+
+            {/* <TopProductionStatesHorizontalBarChart data={analyticsData} /> */}
+
+            <PolarAreaChart
                 data={analyticsData}
                 selectedState={selectedState}
                 selectedDistrict={selectedDistrict}
@@ -263,8 +304,6 @@ function App() {
                 selectedTopLeast={selectedTopLeast}
                 selectedType={selectedType}
             />
-
-            {/* <TopProductionStatesHorizontalBarChart data={analyticsData} /> */}
         </div>
     );
 }

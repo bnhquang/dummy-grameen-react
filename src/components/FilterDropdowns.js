@@ -80,28 +80,28 @@ function FilterDropdowns({
             <Select
                 options={stateOptions}
                 value={selectedState}
-                onChange={handleStateChange}
+                onChange={setSelectedState}
                 placeholder="Select State"
                 isClearable
             />
             <Select
                 options={districtOptions}
                 value={selectedDistrict}
-                onChange={handleDistrictChange}
+                onChange={setSelectedDistrict}
                 placeholder="Select District"
                 isClearable
             />
             <Select
                 options={cropNameOptions}
                 value={selectedCropName}
-                onChange={handleCropNameChange}
+                onChange={setSelectedCropName}
                 placeholder="Select Crop Name"
                 isClearable
             />
             <Select
                 options={seasonOptions}
                 value={selectedSeason}
-                onChange={handleSeasonChange}
+                onChange={setSelectedSeason}
                 placeholder="Select Season"
                 isClearable
             />
